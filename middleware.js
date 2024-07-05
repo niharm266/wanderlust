@@ -5,5 +5,5 @@ module.exports.isLoggedIn=(req,res,next)=>{
         req.flash("error","You are not logged in")
         return res.redirect("/login",)
     }
-    next()
+    next();
 }
